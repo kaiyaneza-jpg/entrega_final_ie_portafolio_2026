@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Michroma&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+/* --- Estilos Generales --- */
+body {
+    font-family: 'Titillium Web';
+    margin: 70px;
+    margin-top:4em;
+    padding: 2em;
+    background-color: #f5dae9;
+ 
+}
+
+
+h1{
+    font-family: 'Lexend Deca';
+    color: #038a0a;
+    font-size: 3em;
+     margin-top: -1em;
+     shadow: 0 2px 2px #153d05;
+}
+h2 {
+    font-family: 'Lexend Deca';
+    color: #038a0a;
+
+}
+
+h3{
+    font-family: 'Titillium Web';
+    color: #780b5a;
+    font-size: 1em;
+}
+
+/* --- Contenedor Principal --- */
+#container {
+    display: grid;
+    /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5em; /* Espacio entre las columnas */
+    align-items: start; /* Alinea los items al inicio */
+}
+
+/* --- Columna Izquierda: Intro --- */
+.intro {
+    /* Por defecto, se ubica en la primera columna del grid */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos internos en una columna */
+    justify-content: right; /* Centra el contenido verticalmente */
+}
+
+.intro button {
+    font-family: 'Lexend Deca';
+    font-size: 1.2em;
+    padding: 8px 105px;
+ /*   margin-top: 50px;*/
+    border: none;
+    background-color: #88cf67;
+    color: #153d05;
+     box-shadow: 0 2px 2px #153d05;
+ 
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.intro k {
+ font-family: 'Titillium Web';
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+
+.intro p {
+    /* El párrafo ya usa el ancho de su contenedor por defecto */
+    font-family: 'Titillium Web'; 
+    margin-top: 4.5em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.intro a {
+    /* El ancla del botón se centrará gracias al 'align-self' */
+    align-self: center; /* Centra este elemento específico en el eje transversal */
+    margin-top: 1.8em;
+}
+
+
+.intro button:hover {
+    background: #5c0845; ;
+    color: #f5dae9;
+
+}
+
+
+/* Columna Derecha: Proyectos */
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    /* Por defecto, se ubica en la segunda columna del grid */
+}
+
+/* --- Galería de Proyectos --- */
+.galeria {
+    display: grid;
+    /* Define 3 columnas de igual tamaño */
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1em; /* Espacio entre las tarjetas */
+}
+
+/* --- Tarjetas Individuales --- */
+.tarjeta {
+    background-color: #f5dae9;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px #5c0845;
+    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+}
+
+.tarjeta a {
+    /* El ancla ocupa todo el espacio de su columna en la galería */
+    display: block; /* Permite que el ancla ocupe todo el espacio */
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tarjeta a:hover {
+    filter: brightness(70%); /* Aplica un filtro de brillo al 70% (más oscuro) */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.tarjeta img {
+    /* La imagen se ajusta al ancho del ancla */
+    width: 100%;
+    display: block; /* Elimina espacios en blanco debajo de la imagen */
+}
+
+.tarjeta h3 {
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+
+/* --- Media Query para pantallas pequeñas --- */
+@media (max-width: 900px) {
+    
+    /* Ajusta los márgenes del body para aprovechar el espacio */
+    body {
+        margin: 20px;
+        padding: 1em;
+    }
+
+    /* Cambia el contenedor principal a una sola columna */
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cambia la galería de proyectos a una sola columna */
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
