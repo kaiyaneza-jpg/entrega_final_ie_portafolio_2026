@@ -15,10 +15,10 @@ body {
 
 h1{
     font-family: 'Lexend Deca';
-    color: #038a0a;
+    color: #038a0a #153d05;
     font-size: 3em;
      margin-top: -1em;
-     shadow: 0 2px 2px #153d05;
+
 }
 h2 {
     font-family: 'Lexend Deca';
