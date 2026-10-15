@@ -111,7 +111,7 @@ h3{
 /* --- Tarjetas Individuales --- */
 .tarjeta {
     background-color: #f5dae9;
-    border-radius: 100px;
+    border-radius: 10em;
     box-shadow: 0 2px 2px #5c0845;
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
 }
