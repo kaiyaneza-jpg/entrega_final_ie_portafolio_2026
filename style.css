@@ -18,7 +18,7 @@ h1{
     color: #ad186a;
     font-size: 3em;
      margin-top: -1em;
-     margin-bottom: -0.7em;
+     margin-bottom: -0.5em;
      
 
 }
@@ -31,7 +31,7 @@ h2 {
 
 h3{
     font-family: 'Titillium Web';
-    color: #780b5a;
+    color: #88cf67;
     font-size: 1em;
 }
 
@@ -113,8 +113,8 @@ h3{
 
 /* --- Tarjetas Individuales --- */
 .tarjeta {
-    background-color: #f5dae9;
-    border-radius: 10em;
+    background-color: #107d15;
+    border-radius: 1em;
     box-shadow: 0 2px 2px #5c0845;
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
 }
@@ -129,8 +129,12 @@ h3{
 }
 
 .tarjeta a:hover {
+
     filter: brightness(70%); /* Aplica un filtro de brillo al 70% (más oscuro) */
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    background: #153d05;
+   color: #f5dae9;
+     
 }
 
 .tarjeta img {
