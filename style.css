@@ -8,7 +8,9 @@ body {
     margin: 70px;
     margin-top:4em;
     padding: 2em;
-    background-color: #f5dae9;
+    background: linear-gradient(to bottom, #f5f1e4 , #f5dae9 );
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
  
 }
 
@@ -24,14 +26,14 @@ h1{
 }
 h2 {
     font-family: 'Lexend Deca';
-    color: #038a0a;
+    color: #8a0342;
     
 
 }
 
 h3{
     font-family: 'Titillium Web';
-    color: #88cf67;
+    color: #fff5ce;
     font-size: 1em;
 }
 
@@ -113,7 +115,7 @@ h3{
 
 /* --- Tarjetas Individuales --- */
 .tarjeta {
-    background-color: #107d15;
+    background-color: #a18317;
     border-radius: 1em;
     box-shadow: 0 2px 2px #5c0845;
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
@@ -132,7 +134,7 @@ h3{
 
     filter: brightness(70%); /* Aplica un filtro de brillo al 70% (más oscuro) */
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    background: #153d05;
+    background: #877b20;
    color: #f5dae9;
      
 }
