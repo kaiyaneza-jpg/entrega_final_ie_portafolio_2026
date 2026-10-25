@@ -137,15 +137,15 @@ h4 {
     display: grid;
     /* Define 3 columnas de igual tamaño */
     grid-template-columns: repeat(5, 1fr);
-    gap: 1em; /* Espacio entre las tarjetas */
+    gap: 0.5em; /* Espacio entre las tarjetas */
     
 }
 
 .otros {
     display: grid;
     /* Define 3 columnas de igual tamaño */
-    grid-template-columns: repeat(3, 5fr);
-    gap: 3em; /* Espacio entre las tarjetas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em; /* Espacio entre las tarjetas */
       align-self: center;
 }
 
