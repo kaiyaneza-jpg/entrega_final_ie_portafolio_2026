@@ -20,16 +20,16 @@ h1{
     font-family: 'Tuffy';
     color: #ad186a;
     font-size: 3em;
-     
+    
      margin-bottom: -0.5em;
      
 
 }
 h2 {
-    font-family: 'Lexend Deca';
+    font-family: 'Tuffy';
     color: #8a0342;
     margin-top: -0.4em;
-
+   box-shadow: 15px 15px 55px #5c0845;
     
 
 }
@@ -41,7 +41,7 @@ h3{
      font-style: italic;
 }
 h4 {
-    font-family: 'Lexend Deca';
+    font-family: 'Tuffy';
     color: #8a0342;
     font-size: 1.2em;
     
@@ -90,11 +90,15 @@ h4 {
 .intro p {
     /* El párrafo ya usa el ancho de su contenedor por defecto */
     font-family: 'Tuffy', sans-serif; 
-    margin-top: 0.6em;
+    margin-top: 0em;
     margin-bottom: 2em;
     text-align: justify;
     line-height: 1.5;
-    font-size:0.8em;
+    font-size:0.9em;
+    color: #280316ea;
+    background-color: #f5dae9;
+    padding: 8px 2em;
+    
 }
 
 .intro a {
@@ -130,7 +134,7 @@ h4 {
 .tarjeta {
       background: #5c0845; ;
     color: #f5dae9;
-    border-radius: 0.5em;
+    border-radius: 0em;
     box-shadow: 0 5px 4px #5c0845;
     overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
 }
