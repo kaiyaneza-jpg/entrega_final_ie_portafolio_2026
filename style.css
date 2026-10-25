@@ -52,7 +52,7 @@ h4 {
 #container {
     display: grid;
     /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
-    grid-template-columns: repeat(2, 0.5fr);
+    /*grid-template-columns: repeat(2, 0.5fr);
     gap: 5em; /* Espacio entre las columnas */
    /* align-items: start; /* Alinea los items al inicio */
 }
@@ -68,7 +68,7 @@ h4 {
 .intro button {
     font-family: 'Tuffy', sans-serif;
     font-size: 1em;
-    padding: 8px 2em;
+    padding: 80px 6em;
  /*   margin-top: 50px;*/
     border: none;
     background-color: #f5dae9;
@@ -86,7 +86,17 @@ h4 {
 
 }
 
+        /* Contenedor principal del cuadro */
+        .cuadro-contenedor {
+          /*  position: relative;*/
+            /*display: inline-block;*/
+              display: grid;
+    /* Define 3 columnas de igual tamaño */
+    grid-template-columns: repeat(5, 3fr);
+    gap: 1em; /
+        }
 
+      
 .intro p {
     /* El párrafo ya usa el ancho de su contenedor por defecto */
     font-family: 'Tuffy', sans-serif; 
@@ -130,6 +140,13 @@ h4 {
     gap: 1em; /* Espacio entre las tarjetas */
 }
 
+.otros {
+    display: grid;
+    /* Define 3 columnas de igual tamaño */
+    grid-template-columns: repeat(3, 5fr);
+    gap: 3em; /* Espacio entre las tarjetas */
+}
+
 /* --- Tarjetas Individuales --- */
 .tarjeta {
       background: #5c0845; ;
@@ -141,7 +158,7 @@ h4 {
 
 .tarjeta a {
     /* El ancla ocupa todo el espacio de su columna en la galería */
-    display: block; /* Permite que el ancla ocupe todo el espacio */
+    /* Permite que el ancla ocupe todo el espacio */
     width: 100%;
     text-decoration: none;
     color: inherit;
