@@ -53,7 +53,7 @@ h4 {
     display: grid;
     /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
     grid-template-columns: repeat(2, 0.5fr);
-    gap: 1em; /* Espacio entre las columnas */
+    gap: 5em; /* Espacio entre las columnas */
    /* align-items: start; /* Alinea los items al inicio */
 }
 
@@ -90,10 +90,11 @@ h4 {
 .intro p {
     /* El párrafo ya usa el ancho de su contenedor por defecto */
     font-family: 'Tuffy', sans-serif; 
-    margin-top: 4.5em;
-    margin-bottom: -2em;
+    margin-top: 0.6em;
+    margin-bottom: 2em;
     text-align: justify;
     line-height: 1.5;
+    font-size:0.8em;
 }
 
 .intro a {
@@ -160,7 +161,7 @@ h4 {
 
 .tarjeta h3 {
     text-align: center;
-    padding: 0.5em 0;
+    padding: 0.1em 0;
     margin: 0;
 }
 
